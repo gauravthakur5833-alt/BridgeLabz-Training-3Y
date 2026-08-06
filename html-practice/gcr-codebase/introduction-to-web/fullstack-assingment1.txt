@@ -1,0 +1,99 @@
+             Full Stack Development
+             Assignment 1 — Solutions
+Q1. Difference between Frontend, Backend, and Full-Stack Development
+Frontend development: refers to everything the user sees and interacts with 
+directly in the browser — the layout, design, and interactivity of a website. 
+It is built using HTML, CSS, and JavaScript, often with frameworks like React or Angular.
+For example, the home page, navigation menu, and “Add to Cart” button on Amazon are all frontend work.
+Backend development: refers to the server side of an application — the logic, database 
+interactions, and business rules that power the frontend. It uses languages like Node.js, Python, or Java, 
+along with databases such as MySQL or MongoDB. For example, verifying a login or processing a payment on Amazon happens on the backend.
+Full-stack development: combines both — a full-stack developer can build a complete, working application end to end,
+such as a food-delivery app that includes both the menu display (frontend) and the order-processing system (backend).
+
+Q2. Diagram: How the Client-Server Model Works
+
++-----------+    HTTP Request    +------------+
+|  Client   | -----------------> | Web Server |
+| (Browser) | <----------------- |            |
++-----------+   HTTP Response    +------------+
+                         |
+                         | Query
+                         v
+                    +-----------+
+                    | Database  |
+                    +-----------+
+
+The client-server model is the foundation of web architecture. 
+The user's browser (client) sends an HTTP request to a web server. 
+The server receives this request, processes it (which may involve querying a database), and sends back 
+an HTTP response containing HTML, CSS, JavaScript, or data. The browser then renders this response and displays the final web page to the user.
+
+Q3. How a Browser Requests and Displays a Web Page
+URL Parsing: The browser reads the URL to identify the protocol, domain name, and path.
+DNS Lookup: It contacts a DNS server to translate the domain name into an IP address.
+Connection: The browser opens a TCP connection to the server (with an SSL/TLS handshake for HTTPS).
+Request: The browser sends an HTTP request, such as GET /index.html.
+Server Processing: The server locates or generates the requested resource and prepares a response.
+Response: The server sends back the page content along with a status code such as 200 OK.
+Rendering: The browser builds the DOM from HTML, applies CSS, executes JavaScript, and paints the page on screen for the user.
+
+Q4. Tools Required to Set Up a Web Development Environment
+Code Editor (e.g. VS Code): for writing and organizing source code.
+Web Browser: for running and testing web pages, along with built-in developer tools for debugging.
+Git and GitHub: for tracking code changes and collaborating with other developers.
+Package Manager (npm/yarn): for installing and managing project dependencies.
+Local Web Server (Live Server, XAMPP): for previewing the project locally before deployment.
+Database Software (MySQL, MongoDB): for storing and managing application data.
+
+Q5. What is a Web Server? Examples of Commonly Used Servers
+A web server is software that stores, processes, and delivers web pages to clients upon request. 
+It listens for incoming HTTP/HTTPS requests, retrieves or generates the requested content, 
+and sends it back as a response. Commonly used web servers include Apache HTTP Server, known for 
+its flexibility and large module ecosystem; Nginx, known for high performance and handling many 
+concurrent connections; Microsoft IIS, built into Windows Server; and Node.js with Express, a lightweight JavaScript-based server popular for modern web applications.
+
+Q6. Roles of Frontend Developer, Backend Developer, and Database Administrator
+Frontend Developer: designs and builds the user interface, implementing layout, 
+styling, and interactivity so the site is responsive and easy to use.
+Backend Developer: builds and maintains server-side logic and APIs, 
+handling authentication, business rules, and connecting the database to the frontend.
+Database Administrator (DBA): designs and maintains the database, ensuring data integrity, 
+security, performance, and regular backups.
+
+Q7. Installing and Configuring VS Code for HTML, CSS, and JavaScript Development
+This is a hands-on task; the steps below should be followed on your own computer and 
+a screenshot of the final setup should be attached.
+1. Download: Visit code.visualstudio.com and download the installer for your operating system.
+2. Install: Run the installer and complete the setup wizard with default options.
+3. Add Extensions: Install “Live Server” for live page previews, “Prettier” for code formatting, 
+and “ESLint” for catching JavaScript errors.
+4. Create a Project: Open a new folder and create index.html, style.css, and script.js, linking the CSS 
+and JS files inside the HTML.
+5. Test: Right-click index.html and choose “Open with Live Server” to confirm 
+the page loads correctly, then take a screenshot of the setup.
+
+Q8. Static vs Dynamic Websites
+A static website has fixed content that is the same for every visitor. It is built using only 
+HTML and CSS, and updating it requires manually editing the files. A simple personal portfolio page is a good example.
+A dynamic website's content changes based on the user, time, or underlying data. It uses server-side 
+languages and a database to generate pages on the fly, allowing features like logins and personalization. 
+An online store such as Flipkart, where product listings and prices update automatically, is a good example.
+
+Q9. Five Web Browsers and Their Rendering Engines
+Because Chrome, Edge, and Opera all use the Blink engine, they render pages very similarly. 
+Firefox and Safari use different engines and may render some CSS or JavaScript features slightly differently, 
+which is why cross-browser testing matters.
+
+Q10. Diagram: Basic Web Architecture Flow
+
++--------+   REST/JSON   +----------+   +------------+   +-----------+
+| Client | ------------> | API Layer| ->| Web Server |-> | Database  |
+|        | <------------ |          | <-|            |<- |           |
++--------+    Response   +----------+   +------------+   +-----------+
+
+The client (browser or mobile app) sends a request through the API layer, typically using REST 
+and JSON. The API layer forwards this request to the web server, which contains the application's business logic. 
+The server then queries the database to fetch, insert, update, or delete data as needed, and the database returns 
+the result set. Finally, the server sends the processed data back through 
+the API layer to the client, which renders it on screen for the user.
