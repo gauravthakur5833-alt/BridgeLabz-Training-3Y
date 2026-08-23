@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Questions - Combined HTML Assignment</title>
+</head>
+<body>
+
+    <h1>HTML Assignment - All 15 Questions Combined</h1>
+    <hr>
+
+    <section>
+        <h1>Question 1: Multi-Section Resume Page</h1>
+
+   
+    <header>
+        <h1>Jane Doe</h1>
+        <p>Email: jane.doe@example.com | Phone: +91 98765 43210 | Location: Aligarh, Uttar Pradesh</p>
+    </header>
+
+    
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#education">Education</a>
+    </nav>
+
+    <main>
+
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated computer science student with a passion for web development
+                and problem solving. I enjoy building simple, clean, and functional websites.
+            </p>
+        </section>
+
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+      
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>Personal Portfolio Website</li>
+                <li>Online Library Management System</li>
+                <li>Weather Forecast Application</li>
+            </ol>
+        </section>
+
+        
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1">
+                <tr>
+                    <th>Course</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.Tech in Computer Science</td>
+                    <td>Aligarh Institute of Technology</td>
+                    <td>2022 - 2026</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary (Class XII)</td>
+                    <td>City Public School</td>
+                    <td>2021 - 2022</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jane Doe. All Rights Reserved.</p>
+    </footer>
+    </section>
+    <hr>
+
+    <section>
+        <h1>Question 2: Product Catalog Page</h1>
+
+    <header>
+        <h1>Online Store - Product Catalog</h1>
+    </header>
+
+    <main>
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="https://via.placeholder.com/80" alt="Wireless Headphones" width="80" height="80">
+                    <br>Wireless Headphones
+                </td>
+                <td>Over-ear Bluetooth headphones with noise cancellation.</td>
+                <td>&#8377;2,499</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="https://via.placeholder.com/80" alt="Smart Watch" width="80" height="80">
+                    <br>Smart Watch
+                </td>
+                <td>Fitness tracking smart watch with heart rate monitor.</td>
+                <td>&#8377;3,999</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">
+                    <img src="https://via.placeholder.com/80" alt="Running Shoes" width="80" height="80">
+                    <br>Running Shoes
+                </td>
+                <td>Lightweight running shoes - Black colour.</td>
+                <td>&#8377;1,899</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>Lightweight running shoes - White colour.</td>
+                <td>&#8377;1,899</td>
+                <td>Out of Stock</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">Free shipping on all orders above &#8377;1,000.</td>
+            </tr>
+
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Online Store. All Rights Reserved.</p>
+    </footer>
+    </section>
+    <hr>
+
+   
+    <section>
+        <h1>Question 3: Course Registration Form</h1>
+
+    <header>
+        <h1>Course Registration</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Course Selection</legend>
+
+                <label for="course">Select Course:</label>
+                <select id="course" name="course">
+                    <option value="html">HTML Basics</option>
+                    <option value="css">CSS Fundamentals</option>
+                    <option value="js">JavaScript Essentials</option>
+                    <option value="python">Python Programming</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Register">
+
+        </form>
+
+        <h2>Available Course Schedules</h2>
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 11:30 AM</td>
+                <td>Mr. Sharma</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>2:00 PM - 3:30 PM</td>
+                <td>Ms. Verma</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>11:00 AM - 12:30 PM</td>
+                <td>Mr. Khan</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Course Registration Portal.</p>
+    </footer>
+    </section>
+    <hr>
+
+   
+    <section>
+        <h1>Question 4: Company Layout Page</h1>
+
+    <header>
+        <h1>Bright Future Technologies</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#services">Services</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About the Company</h2>
+            <p>
+                Bright Future Technologies is a software development company dedicated to
+                delivering innovative digital solutions for businesses around the world.
+                Founded in 2010, we specialize in web, mobile, and cloud applications.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Cloud Solutions</li>
+                <li>IT Consulting</li>
+            </ul>
+        </section>
+    </main>
+
+    <aside>
+        <h2>From Our CEO</h2>
+        <blockquote>
+            "Our mission is to empower businesses with technology that makes a real difference
+            in people's lives."
+        </blockquote>
+        <p>- Rajesh Kumar, CEO</p>
+    </aside>
+
+    <footer id="contact">
+        <p>Email: contact@brightfuturetech.com</p>
+        <p>Address: 123 Tech Park, Aligarh, Uttar Pradesh, India</p>
+    </footer>
+    </section>
+    <hr>
+
+    
+    <section>
+        <h1>Question 5: Nested List Structure (University Hierarchy)</h1>
+
+    <header>
+        <h1>University &rarr; Departments &rarr; Courses &rarr; Topics</h1>
+    </header>
+
+    <main>
+        <ul>
+            <li>Aligarh National University
+
+                <ul>
+                    <li>Department of Computer Science
+
+                        <ol>
+                            <li>Web Development
+
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </li>
+                            <li>Data Structures
+
+                                <ul>
+                                    <li>Arrays</li>
+                                    <li>Linked Lists</li>
+                                    <li>Trees</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>Department of Electronics
+
+                        <ol>
+                            <li>Digital Circuits
+
+                                <ul>
+                                    <li>Logic Gates</li>
+                                    <li>Flip Flops</li>
+                                </ul>
+                            </li>
+                            <li>Microprocessors
+
+                                <ul>
+                                    <li>8085 Architecture</li>
+                                    <li>Assembly Language</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aligarh National University.</p>
+    </footer>
+    </section>
+    <hr>
+
+    <!-- ============================================= -->
+    <!-- Question 6: Restaurant Menu Page -->
+    <!-- ============================================= -->
+    <section>
+        <h1>Question 6: Restaurant Menu Page</h1>
+
+    <!-- Header: restaurant name -->
+    <header>
+        <h1>The Golden Spoon Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="#starters">Starters</a> |
+        <a href="#main-course">Main Course</a> |
+        <a href="#desserts">Desserts</a>
+    </nav>
+
+    <main>
+        <section id="starters">
+            <h2>Starters</h2>
+            <table border="1">
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Spring Rolls</td>
+                    <td>Crispy rolls stuffed with vegetables</td>
+                    <td>&#8377;150</td>
+                </tr>
+                <tr>
+                    <td>Paneer Tikka</td>
+                    <td>Grilled cottage cheese with spices</td>
+                    <td>&#8377;220</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="main-course">
+            <h2>Main Course</h2>
+            <table border="1">
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Butter Chicken</td>
+                    <td>Creamy tomato-based chicken curry</td>
+                    <td>&#8377;350</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Biryani</td>
+                    <td>Fragrant rice cooked with mixed vegetables</td>
+                    <td>&#8377;280</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <table border="1">
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>Sweet milk dumplings in sugar syrup</td>
+                    <td>&#8377;100</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Brownie</td>
+                    <td>Warm brownie served with ice cream</td>
+                    <td>&#8377;180</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: +91 98765 12345 | goldenspoon@example.com</p>
+    </footer>
+    </section>
+    <hr>
+
+    
+    <section>
+        <h1>Question 7: Conference Schedule Page</h1>
+
+    <header>
+        <h1>Annual Tech Conference 2026 - Schedule</h1>
+    </header>
+
+    <main>
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th>Session</th>
+                    <th>Time</th>
+                    <th>Topic</th>
+                    <th>Speaker</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Morning</td>
+                    <td>9:00 AM - 10:30 AM</td>
+                    <td>Introduction to Artificial Intelligence</td>
+                    <td>Dr. Anil Mehta</td>
+                </tr>
+                <tr>
+                    <td>Morning</td>
+                    <td>11:00 AM - 12:30 PM</td>
+                    <td>Cloud Computing Trends</td>
+                    <td>Ms. Priya Nair</td>
+                </tr>
+                <tr>
+                    <td>Afternoon</td>
+                    <td>2:00 PM - 3:30 PM</td>
+                    <td>Cybersecurity Best Practices</td>
+                    <td>Mr. Rohan Gupta</td>
+                </tr>
+                <tr>
+                    <td>Afternoon</td>
+                    <td>4:00 PM - 5:30 PM</td>
+                    <td>Web Development Frameworks</td>
+                    <td>Ms. Sneha Kapoor</td>
+                </tr>
+                <tr>
+                    <td>Evening</td>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td>Panel Discussion: Future of Tech</td>
+                    <td>All Speakers</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">Schedule is subject to change. Please check the notice board for updates.</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Annual Tech Conference.</p>
+    </footer>
+    </section>
+    <hr>
+
+    <section>
+        <h1>Question 8: Student Report Page</h1>
+
+    <h1>Aligarh Public School</h1>
+    <h2>Student Report Card</h2>
+
+    <main>
+        <table border="1">
+            <tr>
+                <th rowspan="2" title="Subject Name">Subject</th>
+                <th colspan="2" title="Marks Breakdown">Marks</th>
+            </tr>
+            <tr>
+                <th title="Marks Obtained">Obtained</th>
+                <th title="Maximum Marks">Maximum</th>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td>85</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>92</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>88</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Social Studies</td>
+                <td>79</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>95</td>
+                <td>100</td>
+            </tr>
+
+            <!-- Total and Percentage row (no calculation needed, text only) -->
+            <tr>
+                <td colspan="2" title="Sum of all marks">Total</td>
+                <td>439 / 500</td>
+            </tr>
+            <tr>
+                <td colspan="2" title="Overall percentage">Percentage</td>
+                <td>87.8%</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aligarh Public School.</p>
+    </footer>
+    </section>
+    <hr>
+
+    <section>
+        <h1>Question 9: Travel Destination Page</h1>
+
+    <header>
+        <h1>Top 3 Travel Destinations</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Paris, France</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Paris skyline with Eiffel Tower" width="300" height="150">
+            <p>
+                Known as the City of Light, Paris is famous for the Eiffel Tower, the Louvre
+                Museum, and its charming streets filled with cafes and art.
+            </p>
+            <blockquote>
+                "Paris is always a good idea." - A Traveler's Review
+            </blockquote>
+        </article>
+
+        <article>
+            <h2>Kyoto, Japan</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Kyoto temple" width="300" height="150">
+            <p>
+                Kyoto offers a peaceful blend of traditional temples, bamboo forests, and
+                beautiful gardens that showcase Japan's rich cultural heritage.
+            </p>
+            <blockquote>
+                "Walking through Kyoto felt like stepping back in time." - A Traveler's Review
+            </blockquote>
+        </article>
+
+        <article>
+            <h2>Manali, India</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Manali mountains" width="300" height="150">
+            <p>
+                Nestled in the Himalayas, Manali is a popular hill station known for its
+                snow-capped mountains, adventure sports, and scenic valleys.
+            </p>
+            <blockquote>
+                "The mountains of Manali left me speechless." - A Traveler's Review
+            </blockquote>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Travel Tips</h2>
+        <ul>
+            <li>Book flights and hotels in advance</li>
+            <li>Carry a universal power adapter</li>
+            <li>Keep copies of important documents</li>
+            <li>Check local weather before packing</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Travel Diaries. All Rights Reserved.</p>
+    </footer>
+    </section>
+    <hr>
+
+  
+    <section>
+        <h1>Question 10: Dropdown-based Selection Page</h1>
+
+    <header>
+        <h1>Travel Preferences Selection</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="india" selected>India</option>
+                <option value="japan">Japan</option>
+                <option value="france">France</option>
+            </select>
+            <br><br>
+
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="up" selected>Uttar Pradesh</option>
+                <option value="mh">Maharashtra</option>
+                <option value="kl">Kerala</option>
+            </select>
+            <br><br>
+
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="aligarh" selected>Aligarh</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="agra">Agra</option>
+            </select>
+            <br><br>
+
+            <label for="place">Favorite Tourist Place:</label>
+            <select id="place" name="place">
+                <option value="tajmahal" selected>Taj Mahal</option>
+                <option value="redfort">Red Fort</option>
+                <option value="qutubminar">Qutub Minar</option>
+            </select>
+
+        </form>
+
+        <p>
+            You have selected India, Uttar Pradesh, Aligarh, and your favorite tourist
+            place is the Taj Mahal.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Travel Preferences.</p>
+    </footer>
+    </section>
+    <hr>
+
+  
+    <section>
+        <h1>Question 11: News Layout Page</h1>
+
+    <header>
+        <h1>The Daily Bulletin</h1>
+    </header>
+
+    <nav>
+        <a href="#sports">Sports</a> |
+        <a href="#technology">Technology</a> |
+        <a href="#politics">Politics</a>
+    </nav>
+
+    <main>
+        <article id="sports">
+            <h2>India Wins Thrilling Cricket Match</h2>
+            <time datetime="2026-08-20">August 20, 2026</time>
+            <p>
+                In a nail-biting finish, the Indian cricket team secured victory in the
+                final over against their opponents, delighting fans across the country.
+            </p>
+            <p>Source: <a href="#">SportsNewsToday</a></p>
+        </article>
+
+        <article id="technology">
+            <h2>New Smartphone Launched with AI Features</h2>
+            <time datetime="2026-08-21">August 21, 2026</time>
+            <p>
+                A leading tech company unveiled its latest smartphone, featuring advanced
+                AI-powered camera and battery optimization tools.
+            </p>
+            <p>Source: <a href="#">TechDailyNews</a></p>
+        </article>
+
+        <article id="politics">
+            <h2>New Policy Announced for Rural Development</h2>
+            <time datetime="2026-08-22">August 22, 2026</time>
+            <p>
+                The government announced a new policy aimed at improving infrastructure
+                and employment opportunities in rural areas.
+            </p>
+            <p>Source: <a href="#">NationalNewsWire</a></p>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Popular Topics</h2>
+        <ul>
+            <li>Elections 2026</li>
+            <li>Artificial Intelligence</li>
+            <li>Climate Change</li>
+            <li>Cricket World Cup</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Contact: news@dailybulletin.com | &copy; 2026 The Daily Bulletin. All Rights Reserved.</p>
+    </footer>
+    </section>
+    <hr>
+
+   
+    <section>
+        <h1>Question 12: Quotation Showcase Page</h1>
+
+    <header>
+        <h1>Inspiring Quotations</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>On Success</h2>
+            <blockquote>
+                Success is not final, failure is not fatal: it is the courage to continue
+                that counts.
+            </blockquote>
+            <p>&mdash; Winston Churchill</p>
+        </section>
+
+        <section>
+            <h2>On Dreams</h2>
+            <blockquote>
+                The future belongs to those who believe in the beauty of their dreams.
+            </blockquote>
+            <p>&mdash; Eleanor Roosevelt</p>
+        </section>
+
+        <section>
+            <h2>On Perseverance</h2>
+            <blockquote>
+                It does not matter how slowly you go as long as you do not stop.
+            </blockquote>
+            <p>&mdash; Confucius</p>
+        </section>
+
+        <p>
+            Quotes inspire people because they capture powerful truths in just a few words.
+            They offer wisdom from great minds and encourage us to reflect, stay motivated,
+            and keep moving forward even in difficult times.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Quotation Showcase.</p>
+    </footer>
+    </section>
+    <hr>
+
+  
+    <section>
+        <h1>Question 13: Blog Layout Page</h1>
+
+    <header>
+        <h1>Jane's Journal</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#blogs">Blogs</a> |
+        <a href="#about">About</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>My First Blog</h2>
+            <time datetime="2026-08-10">August 10, 2026</time>
+            <p>
+                Welcome to my very first blog post! I have always wanted to share my
+                thoughts and experiences online, and today I am finally starting this
+                journey. I hope you enjoy reading along.
+            </p>
+            <blockquote>
+                "The beginning is the most important part of the work." - Plato
+            </blockquote>
+        </article>
+
+        <article>
+            <h2>Things I Learned This Week</h2>
+            <time datetime="2026-08-17">August 17, 2026</time>
+            <p>
+                This week I learned the basics of HTML and how semantic tags help make
+                a webpage more meaningful and organized. It was a fun and productive
+                learning experience.
+            </p>
+            <blockquote>
+                "Learning never exhausts the mind." - Leonardo da Vinci
+            </blockquote>
+        </article>
+    </main>
+
+    <footer>
+        <p>Written by Jane Doe</p>
+    </footer>
+    </section>
+    <hr>
+
+    <section>
+        <h1>Question 14: Movie Database Page</h1>
+
+    <header>
+        <h1>Movie Database</h1>
+    </header>
+
+    <main>
+        <table border="1" title="List of popular movies">
+            <caption>Top Rated Movies List</caption>
+
+            <tr>
+                <th>Movie Name</th>
+                <th>Genre</th>
+                <th>Year</th>
+                <th>IMDB Rating</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>The Shawshank Redemption</td>
+                <td>Drama</td>
+                <td>1994</td>
+                <td>9.3</td>
+                <td><a href="https://www.imdb.com/title/tt0111161/" title="View on IMDB">View</a></td>
+            </tr>
+            <tr>
+                <td>Inception</td>
+                <td>Sci-Fi</td>
+                <td>2010</td>
+                <td>8.8</td>
+                <td><a href="https://www.imdb.com/title/tt1375666/" title="View on IMDB">View</a></td>
+            </tr>
+            <tr>
+                <td>3 Idiots</td>
+                <td>Comedy Drama</td>
+                <td>2009</td>
+                <td>8.4</td>
+                <td><a href="https://www.imdb.com/title/tt1187043/" title="View on IMDB">View</a></td>
+            </tr>
+            <tr>
+                <td colspan="5">More movies will be added soon.</td>
+            </tr>
+        </table>
+
+        <p><small>Note: Ratings are based on IMDB data and may change over time.</small></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movie Database.</p>
+    </footer>
+    </section>
+    <hr>
+
+   
+    <section>
+        <h1>Question 15: Portfolio Layout Page</h1>
+
+    <header>
+        <h1>Jane Doe</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate web developer who loves creating clean and functional
+                websites. I enjoy learning new technologies and solving real-world problems
+                through code.
+            </p>
+            <blockquote>
+                "Code is like humor. When you have to explain it, it's bad." - Cory House
+            </blockquote>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Version Control (Git)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <table border="1">
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>A personal website showcasing my work and skills.</td>
+                </tr>
+                <tr>
+                    <td>Task Manager App</td>
+                    <td>A simple app to manage daily tasks and to-do lists.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Contact Info</h2>
+        <p>Email: jane.doe@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/janedoe">linkedin.com/in/janedoe</a></p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Jane Doe. All Rights Reserved.</p>
+    </footer>
+    </section>
+    <hr>
+
+</body>
+</html>
