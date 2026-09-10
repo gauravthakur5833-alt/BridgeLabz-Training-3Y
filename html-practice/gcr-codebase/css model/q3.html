@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Webpage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Fixed Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            background-color: #222;
+            padding: 18px 40px;
+
+            text-align: center;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Common Section Styling */
+        section {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 120px 30px 100px;
+        }
+
+        .content {
+            max-width: 700px;
+        }
+
+        .content h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        /* Linear Gradient Section */
+        .linear-section {
+            background: linear-gradient(
+                135deg,
+                #ff512f,
+                #dd2476
+            );
+        }
+
+        /* Radial Gradient Section */
+        .radial-section {
+            background: radial-gradient(
+                circle,
+                #36d1dc,
+                #5b86e5,
+                #182848
+            );
+
+            /* Parallax-like effect */
+            background-attachment: fixed;
+        }
+
+        /* Fixed Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+
+            z-index: 1000;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+
+            background-color: white;
+            color: #333;
+
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 14px;
+            }
+
+            .content h2 {
+                font-size: 32px;
+            }
+
+            .content p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fixed Header -->
+    <header>
+        <h1>Gradient Backgrounds</h1>
+
+        <nav>
+            <a href="#linear">Linear Gradient</a>
+            <a href="#radial">Radial Gradient</a>
+        </nav>
+    </header>
+
+
+    <!-- Linear Gradient Section -->
+    <section id="linear" class="linear-section">
+
+        <div class="content">
+
+            <h2>Linear Gradient</h2>
+
+            <p>
+                This section uses a linear gradient.
+                The colors change gradually in a straight direction
+                from one color to another.
+            </p>
+
+            <a href="#radial" class="btn">
+                Explore Radial Gradient
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Radial Gradient Section -->
+    <section id="radial" class="radial-section">
+
+        <div class="content">
+
+            <h2>Radial Gradient</h2>
+
+            <p>
+                This section uses a radial gradient.
+                The colors spread outward from a central point
+                in a circular or elliptical pattern.
+            </p>
+
+            <a href="#linear" class="btn">
+                Back to Linear Gradient
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Fixed Footer -->
+    <footer>
+        <p>© 2026 Gradient Background Demo | HTML & CSS Practice</p>
+    </footer>
+
+</body>
+</html>

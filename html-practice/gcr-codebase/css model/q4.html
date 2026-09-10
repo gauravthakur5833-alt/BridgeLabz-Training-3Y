@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Depth Effect</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            min-height: 100vh;
+        }
+
+        /* Heading */
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+
+            /* Text Shadow */
+            text-shadow: 3px 3px 5px #999;
+        }
+
+        header p {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Cards Container */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+
+            gap: 30px;
+            padding: 40px;
+
+            flex-wrap: wrap;
+        }
+
+        /* Common Card Styling */
+        .card {
+            width: 280px;
+            min-height: 350px;
+
+            background-color: white;
+            border-radius: 15px;
+
+            padding: 30px;
+            text-align: center;
+
+            /* Smooth animation */
+            transition: transform 0.4s ease,
+                        box-shadow 0.4s ease;
+
+            cursor: pointer;
+        }
+
+        /* Card 1 - Soft Shadow */
+        .card1 {
+            box-shadow: 5px 5px 15px #bbb;
+        }
+
+        /* Card 2 - Strong Shadow */
+        .card2 {
+            box-shadow: 10px 10px 25px #999;
+        }
+
+        /* Card 3 - Multiple Shadow */
+        .card3 {
+            box-shadow:
+                5px 5px 10px #aaa,
+                -5px -5px 10px #ddd;
+        }
+
+        /* Card Heading */
+        .card h2 {
+            margin-bottom: 15px;
+
+            /* Text Shadow */
+            text-shadow: 2px 2px 4px #aaa;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Profile Circle */
+        .profile {
+            width: 90px;
+            height: 90px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 30px;
+            font-weight: bold;
+
+            background-color: #e0e0e0;
+
+            box-shadow: inset 3px 3px 8px #aaa;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+
+            padding: 10px 22px;
+
+            background-color: #333;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 20px;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Hover Lift Effect */
+
+        .card1:hover {
+            transform: translateY(-12px);
+
+            box-shadow: 10px 20px 30px #aaa;
+        }
+
+        .card2:hover {
+            transform: translateY(-15px);
+
+            box-shadow: 15px 25px 40px #888;
+        }
+
+        .card3:hover {
+            transform: translateY(-10px);
+
+            box-shadow:
+                10px 20px 30px #aaa,
+                -5px -5px 15px #ddd;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page Heading -->
+    <header>
+        <h1>Shadows & Depth Effects</h1>
+
+        <p>
+            Different box-shadow and text-shadow effects using CSS
+        </p>
+    </header>
+
+
+    <!-- Cards -->
+    <div class="cards-container">
+
+        <!-- Card 1 -->
+        <div class="card card1">
+
+            <div class="profile">
+                G
+            </div>
+
+            <h2>Gaurav</h2>
+
+            <p>
+                A Computer Science student interested in
+                Java, Web Development and Cloud Computing.
+            </p>
+
+            <a href="#" class="btn">View Profile</a>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="card card2">
+
+            <div class="profile">
+                D
+            </div>
+
+            <h2>Developer</h2>
+
+            <p>
+                Passionate about creating modern websites
+                and learning new programming technologies.
+            </p>
+
+            <a href="#" class="btn">View Profile</a>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="card card3">
+
+            <div class="profile">
+                C
+            </div>
+
+            <h2>Cloud Learner</h2>
+
+            <p>
+                Exploring AWS, serverless architecture,
+                databases and cloud-based applications.
+            </p>
+
+            <a href="#" class="btn">View Profile</a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

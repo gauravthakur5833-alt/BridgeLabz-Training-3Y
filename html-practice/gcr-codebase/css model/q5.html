@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+
+    <style>
+
+        /* ================================
+           BASIC PAGE STYLING
+           ================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+
+        /* =================================
+           1. ATTRIBUTE SELECTORS
+           ================================= */
+
+        /* [type="text"]
+           Selects all elements whose type attribute
+           is exactly "text".
+        */
+
+        input[type="text"] {
+            border: 2px solid #3498db;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+
+        /* [href^="https"]
+           ^ means "starts with".
+           This selects links whose href starts with https.
+        */
+
+        a[href^="https"] {
+            color: green;
+            font-weight: bold;
+        }
+
+
+        /* =================================
+           2. PSEUDO-CLASS :HOVER
+           ================================= */
+
+        /* :hover applies styling when
+           the mouse pointer is over an element.
+        */
+
+        button:hover {
+            background: #222;
+            color: white;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+
+        /* =================================
+           3. PSEUDO-CLASS :FOCUS
+           ================================= */
+
+        /* :focus applies styling when an input
+           is selected/clicked.
+        */
+
+        input:focus {
+            outline: 3px solid #90caf9;
+            border-color: #1976d2;
+        }
+
+
+        /* =================================
+           4. PSEUDO-CLASS :NTH-CHILD()
+           ================================= */
+
+        /* :nth-child(odd)
+           Selects odd-numbered list items.
+        */
+
+        li:nth-child(odd) {
+            background: #e8f4ff;
+        }
+
+
+        /* :nth-child(even)
+           Selects even-numbered list items.
+        */
+
+        li:nth-child(even) {
+            background: #fff3e0;
+        }
+
+
+        /* =================================
+           5. PSEUDO-ELEMENT ::BEFORE
+           ================================= */
+
+        /* ::before inserts content before
+           the actual element content.
+        */
+
+        h2::before {
+            content: "★ ";
+            color: orange;
+        }
+
+
+        /* =================================
+           6. PSEUDO-ELEMENT ::AFTER
+           ================================= */
+
+        /* ::after inserts content after
+           the actual element content.
+        */
+
+        h2::after {
+            content: " ✓";
+            color: green;
+        }
+
+
+        /* =================================
+           7. CHILD COMBINATOR >
+           ================================= */
+
+        /* >
+           Selects only direct children.
+
+           Here only <li> elements that are direct
+           children of <ul> will be selected.
+        */
+
+        .items > li {
+            padding: 12px;
+            margin: 5px 0;
+            list-style-position: inside;
+        }
+
+
+        /* =================================
+           8. DESCENDANT COMBINATOR
+           ================================= */
+
+        /* Space between selectors means descendant.
+
+           This selects all <strong> elements
+           inside .description, even if deeply nested.
+        */
+
+        .description strong {
+            color: #e74c3c;
+        }
+
+
+        /* =================================
+           9. ADJACENT SIBLING COMBINATOR +
+           ================================= */
+
+        /* +
+           Selects the immediately following sibling.
+
+           Here the paragraph immediately after h3
+           will be selected.
+        */
+
+        h3 + p {
+            color: #8e44ad;
+            font-weight: bold;
+        }
+
+
+        /* =================================
+           10. GENERAL SIBLING COMBINATOR ~
+           ================================= */
+
+        /* ~
+           Selects all siblings that come after
+           the specified element.
+        */
+
+        h3 ~ p {
+            padding-left: 10px;
+            border-left: 3px solid #8e44ad;
+        }
+
+
+        /* =================================
+           BUTTON STYLING
+           ================================= */
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+
+        /* =================================
+           LIST STYLING
+           ================================= */
+
+        .items {
+            padding: 0;
+        }
+
+
+        /* =================================
+           FOOTER
+           ================================= */
+
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Advanced CSS Selectors</h1>
+        <p>Demonstration of Attribute Selectors, Pseudo-Classes, Pseudo-Elements and Combinators</p>
+    </header>
+
+
+    <main>
+
+        <!-- ATTRIBUTE SELECTORS -->
+        <section>
+
+            <h2>1. Attribute Selectors</h2>
+
+            <input type="text" placeholder="Enter your name">
+
+            <input type="email" placeholder="Enter your email">
+
+            <p>
+                Visit:
+                <a href="https://www.google.com">
+                    Google
+                </a>
+            </p>
+
+            <p>
+                Normal link:
+                <a href="http://example.com">
+                    Example
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- PSEUDO CLASSES -->
+        <section>
+
+            <h2>2. Pseudo-Classes</h2>
+
+            <button>Hover Over Me</button>
+
+            <br><br>
+
+            <input type="text" placeholder="Click here to test :focus">
+
+            <h3>List using :nth-child()</h3>
+
+            <ul class="items">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+
+        </section>
+
+
+        <!-- PSEUDO ELEMENTS -->
+        <section>
+
+            <h2>3. Pseudo-Elements</h2>
+
+            <p>
+                This heading uses <strong>::before</strong>
+                and <strong>::after</strong>.
+            </p>
+
+        </section>
+
+
+        <!-- COMBINATORS -->
+        <section>
+
+            <h2>4. CSS Combinators</h2>
+
+            <div class="description">
+
+                <h3>Direct Child Combinator ></h3>
+
+                <p>
+                    This paragraph is immediately after the heading,
+                    so it demonstrates the <strong>+</strong> combinator.
+                </p>
+
+                <p>
+                    This is another paragraph demonstrating the
+                    <strong>~</strong> sibling combinator.
+                </p>
+
+                <div>
+                    <p>
+                        This paragraph is inside another div and
+                        demonstrates the descendant selector.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Advanced CSS Selectors Demonstration</p>
+    </footer>
+
+</body>
+</html>
